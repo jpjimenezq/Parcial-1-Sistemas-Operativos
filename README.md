@@ -1,3 +1,58 @@
-Parcial-1-Sistemas-Operativos
+# Parcial-1-Sistemas-Operativos
 
-Para la demostración de los temas vistos en las sesiones de clase orientadas a sistemas operativos, donde abordamos temas cómo las llamadas al sistema en el contexto del sistema de archivos, las banderas de ejecucición y la distinción de archivos binarios y de texto. Para la implementación y práctica de estos temas se ha elegido realizar el cifrado César el cual es una técnica de criptografía que consiste en sustituir cada letra de un mensaje por otra letra que se encuentra a un número fijo de posiciones más adelante en el alfabeto, donde a través del lenguaje c++ y los diferentes recursos dentro de este, pudimos ejecutar y probar su funcionamiento y veracidad. A este mismo algortimo de encriptación de datos se le realizaron unas modificaciones que permitían no solo cifrar letras, sino también símbolos y números según su representación y valor en la tabla de código ASCII, el cual fue utilizado desde el item 32 que corresponde al espacio, hasta el 126 que corresponde a la virgulilla 
+Este proyecto se desarrolla como parte de la demostración de los temas vistos en las sesiones de clase orientadas a sistemas operativos. Se abordan conceptos fundamentales como:
+
+- Llamadas al sistema en el contexto del sistema de archivos.
+- Banderas de ejecución.
+
+## Implementación del Cifrado César
+
+Para la implementación y práctica de estos temas, se ha elegido el cifrado César, una técnica de criptografía que consiste en sustituir cada letra de un mensaje por otra que se encuentra a un número fijo de posiciones más adelante en el alfabeto.
+
+A través del lenguaje C++ y los diferentes recursos dentro de este, se ejecutó y probó su funcionamiento. Se realizaron modificaciones al algoritmo original para permitir el cifrado no solo de letras, sino también de símbolos y números, utilizando su representación en la tabla de código ASCII. Se empleó el rango desde el ítem 32 (espacio) hasta el 126 (virgulilla ~).
+
+## Uso
+
+El programa cuenta con una serie de opciones para facilitar su ejecución:
+- -h, --help             Muestra un mensaje con las opciones del programa
+- -v, --version          Muestra la versión del programa
+- -e, --encrypt <file>   Encripta el archivo
+- -d, --decrypt <file>   Desencripta el archivo
+
+## Requisitos
+
+- Compilador de C++ (g++ recomendado).
+- Sistema operativo basado en Linux.
+- Conocimientos básicos en ejecución de programas desde la terminal.
+
+## Compilación y Ejecución
+
+Para compilar el programa, utilice:
+
+```sh
+g++ -o cesar cesar.cpp
+```
+
+Para ejecutar el programa con cifrado:
+
+```sh
+./cesar -e archivo.txt
+```
+
+Para descifrar:
+
+```sh
+./cesar -d archivo.txt
+```
+
+Tambien en nuestra maquina donde desarrollamos el programa podemos usar el programa como una funcion de sistema con:
+```sh
+cesar [opcion] <file>
+```
+
+## Autor
+- Valentina Giraldo Noreña
+- Juan Pablo Jimenez Quiroz
+- Camilo Soto Reyes
+
+
